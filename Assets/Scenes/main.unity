@@ -157,6 +157,8 @@ GameObject:
   - 33: {fileID: 170983345}
   - 23: {fileID: 170983344}
   - 114: {fileID: 170983343}
+  - 114: {fileID: 170983348}
+  - 135: {fileID: 170983347}
   m_Layer: 0
   m_Name: Inverted Sphere
   m_TagString: Untagged
@@ -224,6 +226,29 @@ Transform:
   - {fileID: 769360133}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!135 &170983347
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 170983342}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &170983348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 170983342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &619916715
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,6 +261,7 @@ GameObject:
   - 114: {fileID: 619916718}
   - 114: {fileID: 619916720}
   - 54: {fileID: 619916719}
+  - 114: {fileID: 619916721}
   m_Layer: 0
   m_Name: PlayerObject
   m_TagString: Untagged
@@ -306,6 +332,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedMultiplyer: 30
+--- !u!114 &619916721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 619916715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8902ef04f323e444b98d2e4fd80a56ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DoubleClickTime: 0.3
+  m_SwipeWidth: 0.3
 --- !u!1 &769360131
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,6 +620,7 @@ GameObject:
   - 124: {fileID: 1778843137}
   - 92: {fileID: 1778843136}
   - 81: {fileID: 1778843135}
+  - 114: {fileID: 1778843140}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -655,6 +695,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 619916717}
   m_RootOrder: 0
+--- !u!114 &1778843140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1778843134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffebc012055484b4899e163803755608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Camera: {fileID: 0}
+  m_ExclusionLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Reticle: {fileID: 0}
+  m_VrInput: {fileID: 0}
+  m_ShowDebugRay: 0
+  m_DebugRayLength: 5
+  m_DebugRayDuration: 1
+  m_RayLength: 500
 --- !u!1 &1809783660
 GameObject:
   m_ObjectHideFlags: 0
