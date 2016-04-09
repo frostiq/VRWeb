@@ -10,7 +10,7 @@ public class Movement : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-	    var transform = GetComponentInParent<Transform>();
+	    var transform = GetComponentInChildren<Transform>();
 	    rigidbody = GetComponent<Rigidbody>();
 	}
 	
