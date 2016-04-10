@@ -4,16 +4,23 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed;
 
-    public Transform Target { get; set; }
+    private Vector3 _origin;
+
+    public Vector3 Target { get; set; }
 
     public void Start()
     {
-        Target = transform;
+        _origin = Target = transform.position;
     }
 
     // Update is called once per frame
 	void Update () {
         float step = speed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, Target.position, step);
+        transform.position = Vector3.MoveTowards(transform.position, Target, step);
+
+	    if (Input.GetMouseButtonDown(1))
+	    {
+	        Target = _origin;
+	    }
     }
 }

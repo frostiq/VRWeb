@@ -31,7 +31,7 @@ public class Actor : MonoBehaviour
     //Handle the Click event
     private void HandleClick()
     {
-        _player.Target = transform;
+        _player.Target = transform.position;
     }
 
 }
