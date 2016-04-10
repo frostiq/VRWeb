@@ -6,7 +6,8 @@ using VRStandardAssets.Utils;
 // be used to change things on gameobjects by handling events.
 public class Actor : MonoBehaviour
 {
-    private VRInteractiveItem _interactiveItem;
+    [SerializeField] private VRInteractiveItem _interactiveItem;
+    [SerializeField] private Rigidbody _player;
 
     public void Start()
     {
@@ -27,7 +28,7 @@ public class Actor : MonoBehaviour
     //Handle the Click event
     private void HandleClick()
     {
-        Debug.Log("Show click state"+DateTime.Now);
+        
     }
 
 }
