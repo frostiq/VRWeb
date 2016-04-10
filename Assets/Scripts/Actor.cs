@@ -7,7 +7,7 @@ using VRStandardAssets.Utils;
 public class Actor : MonoBehaviour
 {
     [SerializeField] private VRInteractiveItem _interactiveItem;
-    [SerializeField] private Rigidbody _player;
+    [SerializeField] private PlayerController _player;
 
     public void Start()
     {
@@ -28,7 +28,7 @@ public class Actor : MonoBehaviour
     //Handle the Click event
     private void HandleClick()
     {
-        
+        _player.Target = transform;
     }
 
 }
