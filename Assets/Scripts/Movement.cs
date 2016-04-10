@@ -1,23 +1,24 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class Movement : MonoBehaviour
 {
-    public float speedMultiplyer;
+    public float SpeedMultiplyer;
 
-    private Rigidbody rigidbody;
+    private Rigidbody _rigidbody;
+
+    private Transform _transform;
     
 	// Use this for initialization
 	void Start ()
 	{
-	    var transform = GetComponentInParent<Transform>();
-	    rigidbody = GetComponent<Rigidbody>();
+	    _transform = GetComponentInChildren<Transform>();
+	    _rigidbody = GetComponent<Rigidbody>();
 	}
 	
     void FixedUpdate()
     {
         float input = Input.GetAxis("Vertical");
 
-        rigidbody.AddForce(transform.forward * input * speedMultiplyer);
+        _rigidbody.AddForce(_transform.forward * input * SpeedMultiplyer);
     }
 }
