@@ -6,6 +6,7 @@ public class movie : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         GetComponent<Renderer>().material.mainTexture = movTexture;
+	    movTexture.loop = true;
         movTexture.Play();
 	}
 	

@@ -577,6 +577,19 @@ Prefab:
       propertyPath: m_Name
       value: Inverted Sphere (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 2035453502}
+    - target: {fileID: 3392376, guid: 1eec4ce88a8c88e448d0721357dd475e, type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 2035453502}
+    - target: {fileID: 11478054, guid: 1eec4ce88a8c88e448d0721357dd475e, type: 2}
+      propertyPath: movTexture
+      value: 
+      objectReference: {fileID: 15200000, guid: c2ac6a64a333ba54e87e2de6b2e7340d,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1eec4ce88a8c88e448d0721357dd475e, type: 2}
   m_IsPrefabParent: 0
@@ -773,10 +786,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3358042, guid: 1eec4ce88a8c88e448d0721357dd475e, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2035453502}
+    - target: {fileID: 3392376, guid: 1eec4ce88a8c88e448d0721357dd475e, type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 2035453502}
+    - target: {fileID: 11478054, guid: 1eec4ce88a8c88e448d0721357dd475e, type: 2}
+      propertyPath: movTexture
+      value: 
+      objectReference: {fileID: 15200000, guid: c2ac6a64a333ba54e87e2de6b2e7340d,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1eec4ce88a8c88e448d0721357dd475e, type: 2}
   m_IsPrefabParent: 0
