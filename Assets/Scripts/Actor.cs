@@ -7,6 +7,8 @@ public class Actor : MonoBehaviour
 {
     [SerializeField] private VRInteractiveItem _interactiveItem;
     private PlayerController _player;
+    private movie _movie;
+    private AudioSource _audioSource;
 
     public void Start()
     {
@@ -15,6 +17,10 @@ public class Actor : MonoBehaviour
 
         _player = GetComponentInParent<PlayerReference>().Player;
         if(_player == null) Debug.LogError("_player == null");
+
+        _movie = GetComponentInParent<movie>();
+        _audioSource = GetComponentInParent<AudioSource>();
+        
     }
 
     private void OnEnable()
@@ -32,6 +38,9 @@ public class Actor : MonoBehaviour
     private void HandleClick()
     {
         _player.Target = transform.position;
+
+        if (_movie != null)
+            _movie.Play(_audioSource);
     }
 
 }

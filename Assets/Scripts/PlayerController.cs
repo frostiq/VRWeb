@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
 
     public Vector3 Target { get; set; }
 
+    public AudioSource AudioSource { get; set; }
+
     public void Start()
     {
         _origin = Target = transform.position;
@@ -21,6 +23,9 @@ public class PlayerController : MonoBehaviour
 	    if (Input.GetMouseButtonDown(1))
 	    {
 	        Target = _origin;
+
+            if (AudioSource != null)
+                AudioSource.Stop();
 	    }
     }
 }

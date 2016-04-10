@@ -1,17 +1,13 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class movie : MonoBehaviour {
     public MovieTexture movTexture;
 	// Use this for initialization
-	void Start () {
+	public void Play (AudioSource audioSource) {
         GetComponent<Renderer>().material.mainTexture = movTexture;
-	    movTexture.loop = true;
         movTexture.Play();
+	    audioSource.clip = movTexture.audioClip;
+        audioSource.PlayDelayed(2f);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }
